@@ -1,0 +1,9 @@
+[Unit]
+Description=Display system stats on 1.14" lcd
+
+[Service]
+Restart=always
+ExecStart=/usr/bin/python3 /home/pi/stats.py
+
+[Install]
+WantedBy=multi-user.target
